@@ -37,9 +37,9 @@ public class UserServiceImpl implements UserService {
     public Response registerUser(RegistrationRequest registrationRequest) {
         UserRole role = UserRole.CUSTOMER;
 
-        if (registrationRequest.getRole() != null) {
-            role = registrationRequest.getRole();
-        }
+//        if (registrationRequest.getRole() != null) {
+//            role = registrationRequest.getRole();
+//        }
 
         User userToSave = User.builder()
                 .firstName(registrationRequest.getFirstName())
